@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font awesome (kit version) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/912f539c83.js" crossorigin="anonymous" defer></script>
+    <script src="js/script.js" defer></script>
+    <title>TK Portfolio website</title>
+  </head>
+  <body class="bg-darkBlue text-white mx-auto">
+    
+    <div class="relative">
+      <header class="container max-w-6xl mx-auto px-6 py-8  flex justify-between items-center">
+        <!-- Logo - comes from BT freelance course -->
+        <div>
+          <a href="/">
+            <p class="text-xl font-bold tracking-widest">tomkrieg<span class="text-accentBlue">designs</span></p>
+          </a>
+        </div>
+  
+        <nav class="hidden md:flex justify-center items-center space-x-10">
+          <!-- <a class="hover:text-accentCyan" href="#services">Services</a>     -->
+          <a class="hover:text-accentCyan" href="#packages">Packages</a>   
+          <a class="hover:text-accentCyan" href="#projects">Projects</a>   
+          <a class="hover:text-accentCyan" href="#testimonials">Testimonials</a>
+          <a class="hover:text-accentCyan" href="#contact">Contact</a>   
+        </nav>
+        <button id="nav-btn" class="md:hidden">
+          <!-- <img src="./images/icon-hamburger.svg" alt="">   -->
+          <svg class="text-gray-300" xmlns="http://www.w3.org/2000/svg" width="18" height="15"><path fill="currentColor" fill-rule="evenodd" d="M0 0h18v3H0V0zm0 6h18v3H0V6zm0 6h18v3H0v-3z"/></svg>  
+        </button>
+      </header>
+  
+      <section id="hero">
+        <div class="container max-w-6xl mx-auto px-6 pt-8 pb-20 flex flex-col space-y-16 justify-center items-start md:flex-row-reverse md:space-y-0 md:justify-between md:pt-16">
+  
+          <!-- Here is some kind of image -->
+          <div class="flex flex-col justify-start items-center w-full text-left md:w-1/3">  
+            <div class="w-1/2 h-auto rounded-lg md:w-4/5">
+              <img src="./images/profile-pic-3.jpg" alt="">
+            </div>
+          </div>
+
+          <!-- Headline Text and CTA -->
+          <div class="w-full text-center md:text-left md:w-2/3">
+            <div class="max-w-md text-3xl font-bold mb-10 lg:text-5xl">
+              <h1 class="mb-1">Nice to meet you!</h1>
+              <h1>I'm <span class="pb-0 border-b-4 border-accentCyan">Tom Krieg</span></h1>
+            </div>
+            
+            <h2 class="text-2xl font-semibold mb-1 lg:text-3xl">It’s Time for a Switch-Up</h2>
+            <h3 class="text-lg mb-10 m-width-lg">You can focus on running your business while I focus on growing it.</h3>
+            <p class="m-width-lg text-sm mb-14">Based in Phuket, Thailand, I'm a web designer and developer passionate about building clean, accessible web apps that users love.</p>
+            <a class="px-5 py-2 font-bold tracking-wider border-2 border-accentBlue bg-accentBlue hover:bg-inherit rounded-md " href="#contact">GET STARTED</a>
+          </div>
+  
+        </div>
+      </section>
+
+       <!-- mobile nav -->
+       <div id="mobile-nav" class="hidden md:hidden fixed left-0 right-0 top-0 bottom-0 bg-darkBlue2 opacity-90 z-10">
+        <div class="container mx-auto flex flex-col justify-center items-center text-center text-white mt-20 tracking-widest uppercase">
+          <!-- <a class="w-4/5 py-6 border-b border-gray-500 hover:text-accentCyan" href="#services">Services</a>     -->
+          <a class="w-4/5 py-6 border-b border-gray-500 hover:text-accentCyan" href="#packages">Packages</a>   
+          <a class="w-4/5 py-6 border-b border-gray-500 hover:text-accentCyan" href="#projects">Projects</a>   
+          <a class="w-4/5 py-6 border-b border-gray-500 hover:text-accentCyan" href="#testimonials">Testimonials</a>
+          <a class="w-4/5 py-6 border-b border-gray-500 hover:text-accentCyan" href="#contact">Contact</a>   
+        </div>
+        <button id="nav-btn-close" class="absolute top-10 right-10">
+          <svg class="text-gray-300" xmlns="http://www.w3.org/2000/svg" width="16" height="15"><path fill="currentColor" fill-rule="evenodd" d="M8 5.379L13.303.075l2.122 2.122L10.12 7.5l5.304 5.303-2.122 2.122L8 9.62l-5.303 5.304-2.122-2.122L5.88 7.5.575 2.197 2.697.075 8 5.38z"/></svg>
+          <!-- <img src="./images/icon-close.svg" alt="">     -->
+        </button>
+      </div>
+    </div>
+
+    <!-- Packages -->
+    <section id="packages" class="bg-darkBlue1 py-16">
+
+      <h2 class="text-3xl text-center font-semibold tracking-wider mb-14">Packages And Pricing</h2>    
+
+      <div class="container max-w-6xl mx-auto px-6 mb-12 flex flex-col justify-center items-center space-y-10 lg:flex-row lg:space-y-0 lg:space-x-10">
+
+        <!-- package 1 -->
+        <div class="bg-darkBlue3 p-8 rounded-lg h-96 text-left w-full max-w-sm lg:w-1/3 hover:scale-105 transition duration-200 ease">
+          <h4 class="text-2xl text-accentCyan mb-2">Package 1</h4>
+          <h5 class="text-md font-semibold tracking-widest mb-6">Small Website Build</h5>
+          <ul class="text-left text-sm space-y-3 mb-6">
+            <li class="flex justify-start items-center space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>1 to 2 pages </p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Website design using Figma - consult with client</p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Website build and testing</p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Implement standard SEO</p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Deployment to internet and test</p>
+            </li>
+          </ul>
+          <p>From <span class="text-xl text-accentCyan">THB 5000</span></p>
+        </div>  
+
+         <!-- package 2 -->
+        <div class="bg-darkBlue3 p-8 rounded-lg h-96 text-left w-full max-w-sm lg:w-1/3 hover:scale-105 transition duration-200 ease">
+          <h4 class="text-2xl text-accentCyan mb-2">Package 2</h4>
+          <h5 class="text-md font-semibold tracking-widest mb-6">Medium Website Build</h5>
+          <ul class="text-left text-sm space-y-3 mb-6">
+            <li class="flex justify-start items-center space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>3 to 6 pages </p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Website design using Figma - consult with client</p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Website build and testing</p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Implement standard SEO</p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Deployment to internet and test</p>
+            </li>
+          </ul>
+          <p>From <span class="text-xl text-accentCyan">THB 10000</span></p>
+        </div>  
+
+        <!-- package 3 -->
+        <div class="bg-darkBlue3 p-8 rounded-lg h-96 text-left w-full max-w-sm lg:w-1/3 hover:scale-105 transition duration-200 ease">
+          <h4 class="text-2xl text-accentCyan mb-2">Package 3</h4>
+          <h5 class="text-md font-semibold tracking-widest mb-6">Large Website Build</h5>
+          <ul class="text-left text-sm space-y-3 mb-6">
+            <li class="flex justify-start items-center space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>7 or more pages</p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Website design using Figma - consult with client</p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Website build and testing</p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Implement standard SEO</p>
+            </li>
+            <li class="flex justify-start items-center  space-x-3">
+              <i class="fa-solid fa-check text-accentCyan"></i>
+              <p>Deployment to internet and test</p>
+            </li>
+          </ul>
+          <p>From <span class="text-xl text-accentCyan">THB 20000</span></p>
+        </div>  
+      </div>
+      
+      <div class="container mx-auto px-6 pt-4 flex flex-col justify-center items-center space-y-8 text-center max-w-xl">
+        <a class="px-5 py-2 font-bold tracking-wider border-2 border-accentBlue bg-accentBlue hover:bg-inherit rounded-md " href="#contact">GET A QUOTE</a>
+        <p class="text-sm max-w-md">Note that all projects are different and the actual quote may vary from the above depending on your specific requirements.</p>
+      </div>
+     
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class=" bg-darkBlue2 py-20">
+
+      <div class="container mx-auto px-6 max-w-lg text-center mb-14">
+        <h2 class="text-3xl text-center font-semibold tracking-wider mb-6">Several Projects I've enjoyed</h2>
+        <p class="text-md">The following is a selection of past project I've completed.  Some are client company websites and others personal projects.</p>
+      </div>
+
+      <div class="container max-w-6xl mx-auto px-6 grid grid-cols-1 gap-12 md:grid-cols-2">
+        
+        <!-- Project 1 -->
+        <div class="p-12 w-full bg-darkBlue3 rounded-lg">
+          <h4 class="text-md text-accentCyan mb-4">Baankhunyaphat Website</h4>
+          <img src="./images/bk-2.png" alt="" class="w-full h-64 object-cover mb-10">
+          <p class="text-sm mb-4">This is website for a property developer in Phuket, Thailand called "Baankhunyaphat Villas and Residences". The site showcases the villa designs and the benefits of investing in a property. The site provides English and Thai language options.</p>
+          <p class="text-xs italic mb-8 ">baankhunyaphat.com - Design + code</p>
+          <a class="px-4 py-2 bg-accentBlue rounded-md hover:opacity-90" href="https://baankhunyaphat.com/" target="_blank" rel="noreferrer">Visit Project &rarr;</a>
+        </div>
+
+         <!-- Project 2 -->
+        <div class="p-12 w-full bg-darkBlue3 rounded-lg">
+          <h4 class="text-md text-accentCyan mb-4">Devfeas Website</h4>
+          <img src="./images/df-1.png" alt="" class="w-full h-64 object-cover mb-10">
+          <p class="text-sm mb-4">I developed a website in consultation with company owner for a SaaS company offering software solutions for analyzing the feasibility of property development projects.</p>
+          <p class="text-xs italic mb-12 ">devfeas.com.au - Design + code</p>
+          <a class="px-4 py-2 bg-accentBlue rounded-md hover:opacity-90 " href="https://devfeas.com.au/" target="_blank" rel="noreferrer">Visit Project &rarr;</a>
+        </div>
+
+         <!-- Project 3 -->
+         <div class="p-12 w-full bg-darkBlue3 rounded-lg">
+          <h4 class="text-md text-accentCyan mb-4">Shortly Website</h4>
+          <img src="./images/shortly-2.png" alt="" class="w-full h-64 object-cover mb-10">
+          <p class="text-sm mb-4">This is a personal project for a fictional Saas company to generate short links, which provides better readability while re-directing user to the actual URL.  Deployed to Netlify with random domain name provided.</p>
+          <p class="text-xs italic mb-12 ">Design + code</p>
+          <a class="px-4 py-2 bg-accentBlue rounded-md hover:opacity-90 " href="https://heroic-empanada-6a044e.netlify.app/" target="_blank" rel="noreferrer">Visit Project &rarr;</a>
+        </div>
+
+         <!-- Project 4 -->
+         <div class="px-10 py-12 w-full bg-darkBlue3 rounded-lg">
+          <h4 class="text-md text-accentCyan mb-4">Bookmark Website</h4>
+          <img src="./images/bm-2.png" alt="" class="w-full h-56 object-cover mb-10">
+          <p class="text-sm mb-4">This is a personal project for a fictional Saas company that can be used to manage and share bookmarks - installed as a browser add-on  Deployed to Netlify with random domain name provided.</p>
+          <p class="text-xs italic mb-20 ">Design + code</p>
+          <a class="px-4 py-2 bg-accentBlue rounded-md hover:opacity-90" href="https://creative-bienenstitch-07a44f.netlify.app/" target="_blank" rel="noreferrer">Visit Project &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Services -->
+    <!-- <section id="services" class="max-w-6xl py-24 ">
+
+      <div class="container mx-auto px-6 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-8">
+
+        <div class="p-10 flex flex-col justify-center items-center text-center">
+          <img src="./images/icon-access-anywhere.svg" alt="" class="mb-10">
+          <h2 class="text-xl font-bold mb-4">Designs that impress</h2>
+          <h4 class="text-md">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero et sint nihil officia qui excepturi odio corrupti corporis nemo accusantium.</h4>
+        </div>
+  
+        <div class="p-10 flex flex-col justify-center items-center text-center">
+          <img src="./images/icon-security.svg" alt="" class="mb-10">
+          <h2 class="text-xl font-bold mb-4">Social Media to attract crowds</h2>
+          <h4 class="text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem accusamus expedita repellendus iusto laboriosam quae amet odio cumque deleniti minus?</h4>
+        </div>
+  
+        <div class="p-10 flex flex-col justify-center items-center text-center">
+          <img src="./images/icon-collaboration.svg" alt="" class="mb-10">
+          <h2 class="text-xl font-bold mb-4">Build Features that matter</h2>
+          <h4 class="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis reiciendis obcaecati quos accusantium necessitatibus quia quibusdam magni repellendus eum.</h4>
+        </div>
+  
+        <div class="p-10 flex flex-col justify-center items-center text-center">
+          <img src="./images/icon-any-file.svg" alt="" class="mb-10">
+          <h2 class="text-xl font-bold mb-4">Designs that impress</h2>
+          <h4 class="text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt itaque eius rerum reprehenderit quibusdam voluptas deleniti possimus eveniet corporis incidunt!</h4>
+        </div>
+      </div>
+    </section> -->
+  
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-20 bg-darkBlue1">
+
+      <div class="container max-w-6xl mx-auto px-6">
+
+        <div class ="text-center mx-auto max-w-lg mb-10">
+          <h2 class="text-3xl  font-semibold tracking-wider mb-4">Testimonials</h2>
+          <h4 class="text-md">What have past clients said about my work?</h4>   
+        </div>  
+
+        <!-- <img src="./images/bg-quotes.png" alt=""> -->
+        <img src="./images/bg-quotes.png" alt="">
+        <div class="flex flex-col space-y-10 md:flex-row md:space-y-0 md:space-x-12">
+
+          <div class="p-10 bg-darkBlue3 rounded-lg w-full max-w-md md:w-1/2">
+            <p class="mb-8 italic">
+              Tom Krieg redesigned our website and we are very happy with the flair and skill he has brought to the task. Our website has, in our opinion, a really modern, stylish feel to it and it is very inviting to potential and existing customers, thanks to Tom's excellent work.
+            </p>      
+            <div class="flex justify-left items-center ">
+              <!-- <img class="w-10 h-10 rounded-full" src="./images/profile-1.jpg" alt=""> -->
+              <div class="ml-5">
+                <p class="font-bold mb-1">Mark Andrews</p>
+                <p class="text-xs">Managing Director, Devfeas Pty Ltd</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-10 bg-darkBlue3 rounded-lg w-full max-w-md md:w-1/2">
+            <p class="mb-8 italic">
+              Tom Krieg designed and built our company website - Baan Khunyaphat Villa and Residences.  The website is excellent - it perfectly meets our needs and requirements, it is easy to use and navigate.  
+            </p>      
+            <div class="flex justify-left items-center">
+              <!-- <img class="w-10 h-10 rounded-full" src="./images/profile-2.jpg" alt=""> -->
+              <div class="ml-5">
+                <p class="font-bold mb-1">Preechaluck Deederm</p>
+                <p class="text-xs">Founder, Baan Khunyaphat Villa and Residences Co Ltd</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="p-10 bg-gray-200 dark:bg-darkBlue3 rounded-lg">
+            <p class="pb-8">
+              Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+            </p>      
+            <div class="flex justify-left items-center">
+              <img class="w-10 h-10 rounded-full" src="./images/profile-3.jpg" alt="">
+              <div class="ml-5">
+                <p class="font-bold">Eva Boyd</p>
+                <p class="text-xs">Founder & CEO. Huddle 3</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16">
+
+      <div class="mx-auto text-center max-w-lg">
+        <h2 class="text-3xl font-semibold tracking-wider mb-4">Get in touch today</h2>
+        <p class="text-md mb-12">I would love to hear about your project and how I could help.  Please contact me and I'll get back to you as soon as possible.</p>
+      </div>
+      
+      <div class="container max-w-6xl mx-auto px-6">
+        
+        <div class="p-8  bg-darkBlue2 rounded-md md:p-12">
+          <div class="flex flex-col justify-center items-center space-y-16 md:flex-row md:items-start md:space-y-0 md:space-x-10">
+
+            <!-- Phone and email -->
+            <div class="w-full md:w-1/2">
+              <H3 class="text-xl text-accentCyan mb-6">My contect Details</H3>
+
+               <!-- Item 1 -->
+              <div class="flex items-center mb-10">
+                <div class="p-2 rounded-full mr-6 bg-accentBlue">
+                    <svg class="text-white fill-current" width="18" height="18" viewBox="0 0 18 18"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.3649 1.88322C4.30193 1.80222 4.22245 1.73554 4.13173 1.68762C4.04101 1.6397 3.94113 1.61162 3.83873 1.60527C3.73633 1.59891 3.63375 1.61442 3.5378 1.65075C3.44185 1.68709 3.35474 1.74342 3.28223 1.81602L2.1793 2.92002C1.6641 3.43628 1.47423 4.16695 1.6993 4.80802C2.63342 7.46144 4.15295 9.87052 6.14517 11.8566C8.13122 13.8487 10.5403 15.3683 13.1937 16.3024C13.8348 16.5275 14.5654 16.3376 15.0817 15.8224L16.1846 14.7195C16.2572 14.647 16.3136 14.5599 16.3499 14.4639C16.3862 14.368 16.4017 14.2654 16.3954 14.163C16.389 14.0606 16.361 13.9607 16.313 13.87C16.2651 13.7793 16.1984 13.6998 16.1174 13.6368L13.6566 11.7232C13.5701 11.6561 13.4694 11.6095 13.3623 11.587C13.2551 11.5644 13.1442 11.5665 13.038 11.5931L10.702 12.1766C10.3902 12.2545 10.0635 12.2503 9.75375 12.1645C9.44401 12.0788 9.16177 11.9142 8.9345 11.687L6.31477 9.06615C6.08732 8.83899 5.92258 8.5568 5.83659 8.24706C5.75061 7.93732 5.7463 7.61058 5.8241 7.29869L6.40863 4.96268C6.4352 4.85644 6.43729 4.74555 6.41475 4.63838C6.39221 4.53121 6.34562 4.43056 6.2785 4.34402L4.3649 1.88322ZM2.4769 1.01175C2.66356 0.82503 2.88781 0.680157 3.13475 0.58675C3.3817 0.493343 3.64569 0.453539 3.9092 0.469984C4.17271 0.486428 4.4297 0.558742 4.66312 0.682126C4.89654 0.80551 5.10103 0.977139 5.26303 1.18562L7.17663 3.64535C7.52757 4.09655 7.6513 4.68428 7.51263 5.23895L6.92917 7.57495C6.899 7.69594 6.90063 7.82268 6.9339 7.94286C6.96717 8.06303 7.03094 8.17256 7.11903 8.26082L9.73983 10.8816C9.82819 10.9699 9.93791 11.0338 10.0583 11.067C10.1787 11.1003 10.3056 11.1018 10.4268 11.0715L12.7617 10.488C13.0354 10.4196 13.3211 10.4143 13.5972 10.4725C13.8733 10.5307 14.1325 10.6509 14.3553 10.824L16.815 12.7376C17.6993 13.4256 17.7804 14.7323 16.9889 15.5227L15.886 16.6256C15.0966 17.415 13.9169 17.7616 12.8172 17.3744C10.0024 16.384 7.44679 14.7726 5.33983 12.6598C3.22707 10.5531 1.61568 7.99784 0.625166 5.18348C0.239033 4.08482 0.585699 2.90402 1.37503 2.11468L2.47797 1.01175H2.4769Z" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0">
+                                <rect width="17.0667" height="17.0667" fill="white"
+                                    transform="translate(0.466797 0.466667)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block text-xs text-gray-100">Telephone Number</span>
+                    <span class="block font-medium text-gray-400 text-sm md:text-base">(+66) 0658717232</span>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="flex items-center mb-10">
+                  <div class="p-2 rounded-full mr-6 bg-accentBlue">
+                      <svg class="text-white fill-current" width="16" height="12" viewBox="0 0 16 12"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path
+                              d="M14.8571 0H1.14286C0.839753 0 0.549062 0.120408 0.334735 0.334735C0.120408 0.549062 0 0.839753 0 1.14286V10.2857C0 10.5888 0.120408 10.8795 0.334735 11.0938C0.549062 11.3082 0.839753 11.4286 1.14286 11.4286H14.8571C15.1602 11.4286 15.4509 11.3082 15.6653 11.0938C15.8796 10.8795 16 10.5888 16 10.2857V1.14286C16 0.839753 15.8796 0.549062 15.6653 0.334735C15.4509 0.120408 15.1602 0 14.8571 0V0ZM13.6 1.14286L8 5.01714L2.4 1.14286H13.6ZM1.14286 10.2857V1.66286L7.67429 6.18286C7.76994 6.24922 7.88358 6.28478 8 6.28478C8.11642 6.28478 8.23006 6.24922 8.32571 6.18286L14.8571 1.66286V10.2857H1.14286Z" />
+                      </svg>
+                  </div>
+                  <div>
+                      <span class="block text-xs  text-gray-100">Email Address</span>
+                      <span
+                          class="block font-medium  text-gray-400 text-sm md:text-base">tomkrieg108@gmail.com</span>
+                  </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="flex items-center">
+                  <div class="p-2 rounded-full bg-accentBlue mr-6">
+                      <svg class="text-white fill-current" width="18" height="18" viewBox="0 0 18 18"
+                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0)">
+                              <path
+                                  d="M17.4284 4.87413L15.4017 3.31253C15.264 3.22412 15.1142 3.15601 14.9571 3.11029C14.8006 3.05964 14.6377 3.03148 14.4733 3.02666H8.63987L9.32339 7.29333H14.4733C14.6132 7.29333 14.7881 7.26176 14.9562 7.2097C15.1244 7.15765 15.2865 7.08597 15.4008 7.00832L17.4275 5.44501C17.5427 5.36736 17.5999 5.2641 17.5999 5.16C17.5999 5.05589 17.5427 4.95264 17.4284 4.87413V4.87413ZM7.78654 1.32H6.9332C6.82004 1.32 6.71152 1.36495 6.6315 1.44496C6.55149 1.52498 6.50654 1.6335 6.50654 1.74666V4.73333H3.65982C3.51816 4.73333 3.34408 4.7649 3.17598 4.81781C3.00702 4.86901 2.84574 4.93984 2.73139 5.0192L0.704723 6.5808C0.589523 6.65845 0.533203 6.76256 0.533203 6.86666C0.533203 6.96992 0.589523 7.07317 0.704723 7.15253L2.73139 8.71584C2.84574 8.79349 3.00702 8.86517 3.17598 8.91637C3.34408 8.96842 3.51816 9 3.65982 9H6.50654V16.2533C6.50654 16.3665 6.55149 16.475 6.6315 16.555C6.71152 16.635 6.82004 16.68 6.9332 16.68H7.78654C7.8997 16.68 8.00822 16.635 8.08824 16.555C8.16825 16.475 8.2132 16.3665 8.2132 16.2533V1.74666C8.2132 1.6335 8.16825 1.52498 8.08824 1.44496C8.00822 1.36495 7.8997 1.32 7.78654 1.32V1.32Z" />
+                          </g>
+                          <defs>
+                              <clipPath id="clip0">
+                                  <rect width="17.0667" height="17.0667" fill="white"
+                                      transform="translate(0.533203 0.466667)" />
+                              </clipPath>
+                          </defs>
+                      </svg>
+                  </div>
+                  <div>
+                      <span class="block text-xs text-gray-100">Physical Address</span>
+                      <span class="block font-medium text-gray-400 text-sm md:text-base">25/17 Moo. 5 Tambon Srisoonthorn, Thalang, Phuket 83110</span>
+                  </div>
+              </div>
+
+            </div>  
+
+            <!-- contact form -->
+            <div class="w-full max-w-sm md:w-1/2 text-left">
+              <H3 class="text-lg mb-2 text-accentCyan">Have a Specific Question?</H3>
+              <p class="text-sm text-gray-300 mb-2">Feel free to send me a message and I'll get back to you soon.</p>
+
+              <form action="">
+                <input name="bot-field" class="invisible h-0" tabindex="-1" autocomplete="off">
+                <input id="name" class="px-4 py-2 w-full mb-4 outline-none bg-slate-700 " type="text" name="name" required placeholder="Name...">
+                <input id="email" class="px-4 py-2 w-full mb-4 outline-none bg-slate-700" type="email" name="email" required placeholder="Email...">
+                <textarea id="message" class="px-4 py-2 w-full mb-4 outline-none bg-slate-700"  name="message" rows="4" required placeholder="Your question..."></textarea>
+                <button id="submit-button" class="py-2 px-6 rounded-md bg-accentBlue hover:opacity-90" type="submit">Send Message</button>
+              </form>
+
+            </div>
+
+          </div>    
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer id="footer" class="bg-accentBlue py-8">
+      <div class="container max-w-6xl mx-auto flex flex-col justify-center items-center space-y-10 md:flex-row md:space-y-0 md:justify-around">
+       
+        <!-- Logo - comes from BT freelance course -->
+        <div>
+          <a href="/">
+            <p class="text-xl font-bold tracking-widest">tomkrieg<span class="text-darkBlue3">designs</span></p>
+          </a>
+        </div>
+
+        <nav class="flex flex-col justify-center items-center space-y-3 text-darkBlue2 md:flex-row md:space-y-0 md:space-x-8">
+          <!-- <a class="" href="#services">Services</a>     -->
+          <a class="" href="#packages">Packages</a>   
+          <a class="" href="#projects">Projects</a>   
+          <a class="" href="#testimonials">Testimonials</a>
+          <a class="" href="#contact">Contact</a>   
+        </nav>
+      </div>
+
+    </footer>
+
+  </body>
+</html>
